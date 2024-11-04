@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Operations</title>
+  </head>
+  <body>
+   <div id="info">
+      <p><b>Name :</b> Raj Kolekar</p>
+      <p><b>Roll no. :</b> 42337</p>
+      <p><b>Batch :</b> S - 7</p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Array Operations</h1>
+      <h2>Without standard array methods</h2>
+
+      <label for="arraySize">Enter size of array:</label>
+      <input type="number" id="arraySize" placeholder="arraySize" />
+      <br /><br />
+
+      <label for="newElement">Add an Element:</label>
+      <input type="text" id="newElement" placeholder="Add an Element" />
+      <button onclick="addElement()">Add</button>
+      <br /><br />
+
+      <label for="removeElement">Remove an Element:</label>
+      <input type="text" id="removeElement" placeholder="Remove an Element" />
+      <button onclick="removeElement()">Remove</button>
+      <br /><br />
+      <label for="checkValue">Check for Value:</label>
+      <input type="text" id="checkValue" placeholder="Check a Value in Array" />
+      <button onclick="checkValue()">Check</button>
+      <p id="checkResult"></p>
+      <br /><br />
+
+      <button onclick="emptyArray()">Empty Array</button>
+
+      <h3>Current Array:</h3>
+      <p id="arrayDisplay"></p>
+      <p id="arrayDisplay1"></p>
+      <script src="scripts_2.js"></script>
+    </div>
+  </body>
+</html>

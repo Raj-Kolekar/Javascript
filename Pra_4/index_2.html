@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Comparison</title>
+  </head>
+  <body>
+   <div id="info">
+      <p><b>Name :</b> Raj Kolekar</p>
+      <p><b>Roll no. :</b> 42337</p>
+      <p><b>Batch :</b> S - 7</p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>String Comparison Methods</h1>
+
+      <label for="str1">Enter first string:</label>
+      <input type="text" id="str1" placeholder="String - 1" />
+      <br /><br />
+
+      <label for="str2">Enter second string:</label>
+      <input type="text" id="str2" placeholder="String - 2" />
+      <br /><br />
+
+      <button onclick="compareStrings()">Compare</button>
+
+      <h3>Comparison Results</h3>
+      <p id="equalityResult"></p>
+      <p id="strictEqualityResult"></p>
+      <p id="lengthComparisonResult"></p>
+      <p id="alphabeticalOrderResult"></p>
+      <script src="scripts_2.js"></script>
+    </div>
+  </body>
+</html>

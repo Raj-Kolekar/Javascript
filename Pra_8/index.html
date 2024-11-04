@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change Background Color</title>
+    <style>
+      #colorBox {
+        background-color: white;
+        border: 1px solid black;
+        width: 12em;
+        padding: 1em;
+      }
+
+      /* Style for the input field */
+      #focusInput {
+        background-color: white;
+        border: 1px solid black;
+        padding: 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="colorBox"
+      onmouseover="changeColorOnHover()"
+      onmouseout="resetColorOnLeave()"
+      tabindex="1"
+      onfocus="changeColorOnFocus()"
+    >
+    <p><b>Name :</b> Raj Kolekar</p>
+    <p><b>Roll no. :</b> 42337</p>
+    <p><b>Batch :</b> S - 7</p>
+    </div>
+
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Change Background Color</h1>
+      <label for="focusInput">Focus Here: </label>
+      <input
+        type="text"
+        id="focusInput"
+        onfocus="changeInputColor()"
+        onblur="resetInputColor()"
+      />
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Object Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 400px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        h3 {
+            margin-top: 20px;
+        }
+
+        #output {
+            margin-top: 15px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <p><strong>Name:</strong> Raj Kolekar</p>
+        <p><strong>Roll No:</strong> 42337</p>
+        <p><strong>Batch:</strong> S7</p>
+        <h1>Array Object Manipulation</h1>
+
+        <input type="number" id="arraySize" placeholder="Enter array size">
+        <button onclick="initializeArray()">Set Array Size</button>
+
+        <input type="text" id="newElement" placeholder="Enter an element">
+        <button onclick="addElement()">Add Element</button>
+
+        <input type="number" id="checkIndex" placeholder="Index to check">
+        <button onclick="checkElementType()">Check Element Type</button>
+
+        <h3>Current Array: <span id="arrayDisplay"></span></h3>
+        <p id="output"></p>
+    </div>
+
+    <script src="scripts.js" ></script>
+</body>
+
+</html>

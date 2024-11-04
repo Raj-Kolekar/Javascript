@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+  </head>
+  <body>
+   <div id="info">
+      <p><b>Name :</b> Raj Kolekar</p>
+      <p><b>Roll no. :</b> 42337</p>
+      <p><b>Batch :</b> S - 7</p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>Countdown Timer</h1>
+
+      <label for="endDate">Enter End Date & Time (DD-MM-YYYY HH:MM)</label>
+      <br />
+      <input type="datetime-local" id="endDate" />
+      <button onclick="startCountdown()">Start Countdown</button>
+
+      <h3>Time Remaining:</h3>
+      <h2 id="timerDisplay"></h2>
+      <script src="scripts.js"></script>
+    </div>
+  </body>
+</html>

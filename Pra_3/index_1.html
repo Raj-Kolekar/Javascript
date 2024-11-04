@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Operations</title>
+  </head>
+  <body>
+   <div id="info">
+      <p><b>Name :</b> Raj Kolekar</p>
+      <p><b>Roll no. :</b> 42337</p>
+      <p><b>Batch :</b> S - 7</p>
+    </div>
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <h1>String Operations</h1>
+      <h2>Using standard string methods</h2>
+
+      <h3>Reverse String</h3>
+      <label for="inputStr1">Enter a string : </label>
+      <input type="text" id="inputStr1" placeholder="eg. Raj" />
+      <br />
+      <button onclick="reverseString()">Reverse</button>
+      <p id="reverseRes"></p>
+
+      <h3>Replace Characters</h3>
+      <label for="inputStr2">Enter a string : </label>
+      <input type="text" id="inputStr2" placeholder="eg. Raj" />
+      <br />
+      <label for="findChar">Find character : </label>
+      <input
+        type="text"
+        id="findChar"
+        placeholder="Enter a character to find"
+      />
+      <label for="replaceChar">Replace with : </label>
+      <input
+        type="text"
+        id="replaceChar"
+        placeholder="Enter a character to replace"
+      />
+      <button onclick="replaceChars()">Replace</button>
+      <p id="replaceRes"></p>
+
+      <h3>Check Palindrome</h3>
+      <label for="inputStr3">Enter a string : </label>
+      <input type="text" id="inputStr3" placeholder="eg. Raj" />
+      <br />
+      <button onclick="checkPalindrome()">Check Palindrome</button>
+      <p id="palindromeRes"></p>
+      <script src="scripts_1.js"></script>
+    </div>
+  </body>
+</html>
